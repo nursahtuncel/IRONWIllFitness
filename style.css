@@ -8,7 +8,7 @@
 }
 
 .fullPage{
-    background-image:url(images/backcroundColor.svg);
+    background-image:url(images/fitnessBackcgroundİmage.jpg);
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
@@ -20,49 +20,51 @@
     align-items:center;
 }
 
-#h1One{
+#tittleHero{
     color: white;
      font-size:72px;
     font-weight:800;
     line-height:1;
 }
-#h1Two{
+#heroSpan{
     color: rgb(196, 253, 63);
       font-size:72px;
     font-weight:800;
     line-height:1;
 }
 
-.containerOne{
+.containerHero{
     max-width:768px;
     margin-left:80px;
-
+    width: 100;
     display:flex;
     flex-direction:column;
     justify-content:center;
     gap:24px;
 }
 
-#Sentence{
-  
-     color:#C4C9AC;
+#HeroParagraph{
+    color:#ffffff;
     font-size:18px;
     line-height:30px;
 }
 
-#button1{
+#yourTransformation{
     background-color:rgb(196, 253, 63) ;
     width: 324px;
     height: 50px;
+    font-size: 14px;
+    font-style: 'regular';
 }
 
-#button2{
+#viewPlans{
      width:170px;
-    height:50px;
-
+    height: 50px;
+    font-size: 14px;
     background:transparent;
     color:white;
     border:2px solid white;
+    font-style: 'regular';
 }
 
 .wrappingButton{
