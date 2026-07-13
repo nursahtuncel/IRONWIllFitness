@@ -7,6 +7,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
 .fullPage{
     background-image:url(images/fitnessBackcgroundİmage.jpg);
     background-size:cover;
@@ -33,6 +34,17 @@
     line-height:1;
 }
 
+ @media screen {
+    .containerHero{
+        max-width: 768px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+
+}
+    
 .containerHero{
     max-width:768px;
     margin-left:80px;
@@ -70,4 +82,63 @@
 .wrappingButton{
     display: flex;
     gap: 24px;
+}
+
+.line {
+  width: 100%;
+  height: 4px;
+  background-color: #3a3a3a;
+  margin-top: 30px;
+}
+
+.line-fill {
+  width: 30%; 
+  height: 100%;
+  background-color: #b6ff00;
+}
+
+.training{
+    width: 390px;
+    height: 253px;
+    background-color: #1E1E1E;
+    padding: 25px;
+    
+}
+
+.nutrition{
+      width: 390px;
+    height: 253px;
+    background-color: #1E1E1E;
+    padding: 25px;
+}
+
+.coaching{
+    width: 390px;
+    height: 253px;
+    background-color: #1E1E1E;
+    padding: 25px;
+    
+}
+
+
+  .ourservices {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    background-color: black;
+    padding: 25px;
+    gap: 30px;
+    
+}
+
+.ServicesTittle{
+    font-size: 24px;
+    font-family: 'Montserrat';
+    color: #FFFFFF;
+    
+}
+
+.servicesParagraph{
+    font-size: 16px;
+    color: #C4C9AC;
 }
