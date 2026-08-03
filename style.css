@@ -45,7 +45,6 @@
   font-size: 14px;
   font-weight: 600;
   padding: 12px 24px;
- 
 }
 
 .hamburger-menu {
@@ -74,7 +73,6 @@
     background-color: black;
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
-
   }
 
   .navbar-menu.show {
@@ -94,4 +92,240 @@
   .navbar {
     justify-content: space-between;
   }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border:1px solid #c3f400;
+  max-width: 1440px;
+  width: 100%;
+  margin: 20px auto;
+}
+
+.training-programs {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  background-color: black;
+
+}
+.training-header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border:1px solid #c3f400;
+  
+}
+
+.training-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 64px;
+  color: white;
+}
+
+.training-description {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #c4c9ac;
+}
+
+.recovery-program {
+  display: flex;
+background-color: #1a1a1a;
+color: #ffffff; 
+  border: 2px solid pink;
+  font-family: 'Arial', sans-serif;
+  
+}
+
+.recovery-image {
+  width: 393.98px;
+  height: 298px;
+  opacity: 1;
+}
+
+.recovery-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.recovery-header h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+
+  font-size: 24px;
+  color: #fff;
+}
+
+.recovery-level {
+  padding: 8px 16px;
+  border: 1px solid #c3f400;
+  font-family: "inter", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.recovery-description {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #A0A0A0;
+}
+
+.recovery-btn  {
+    padding: 12px 28px;
+    border: 2px solid #FFFFFF;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #FFFFFF;
+  background:transparent;
+}
+
+.recovery-info {
+    display: flex;
+    align-items: center;
+    gap: 16px; /* İki grubun arasındaki boşluk */
+}
+
+.recovery-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.recovery-item span {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    color: #C4C9AC;
+
+}
+
+.recovery-content {
+    display: flex;
+    flex-direction: column;   
+    gap: 24px;
+    justify-content:center;
+    width: 100%;
+    padding: 50px 60px;
+    box-sizing: border-box;
+}
+
+.program-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Elemanlar arasındaki boşluk */
+    border: 2px solid limegreen;
+    padding: 20px 30px; /* üst-alt 20px, sağ-sol 30px */
+    background-color: #1a1a1a;
+    color: #ffffff
+    
+
+}
+
+.program-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.program-card-content h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color:white;
+}
+
+.program-card-content p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color:#C4C9AC;
+}
+
+
+.program-level {
+    padding: 6px 14px;
+    color: #fff;
+    border: 1px solid #C3F400;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.program-time {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.program-time span {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 14px; 
+    color: #fff;
+}
+
+.program-card-bottom button {
+    padding: 12px 24px;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.program-card-bottom button:hover {
+    background: #fff;
+    color: #000;
+}
+
+.program-time {
+    display: flex;
+    align-items: center;
+    gap: 4px; /* İkon ile yazı arasındaki küçük boşluk */
+}
+
+.program-time img {
+    width: 16px;
+    height: 16px;
+}
+
+.program-card-bottom {
+    display: flex;
+    justify-content: space-between;
+  
+   
+}
+
+.program-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Başlık ve açıklama arasındaki boşluk */
+}
+
+
+.featured-program {
+  border: 2px solid limegreen;
+}
+
+.program-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px; /* Program kartları arasındaki boşluk */
+}
+
+
+.training-content {
+    display: flex;
+    justify-content: space-between;
+    
 }
