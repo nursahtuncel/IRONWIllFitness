@@ -1,144 +1,170 @@
-*{
-    margin: 0px;
-    padding: 0px;
+
+* {
+    margin: 0;
+    padding: 0;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-
-.fullPage{
-    background-image:url(images/fitnessBackcgroundİmage.jpg);
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-
-    width:100%;
-    height:100vh;
-
-    display:flex;
-    align-items:center;
+body {
+    background-color: #000;
+    color: #fff;
+    overflow-x: hidden;
 }
 
-#tittleHero{
-    color: white;
-     font-size:72px;
-    font-weight:800;
-    line-height:1;
-}
-#heroSpan{
-    color: rgb(196, 253, 63);
-      font-size:72px;
-    font-weight:800;
-    line-height:1;
-}
-
- @media screen {
-    .containerHero{
-        max-width: 768px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-
-}
-    
-.containerHero{
-    max-width:768px;
-    margin-left:80px;
-    width: 100;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    gap:24px;
-}
-
-#HeroParagraph{
-    color:#ffffff;
-    font-size:18px;
-    line-height:30px;
-}
-
-#yourTransformation{
-    background-color:rgb(196, 253, 63) ;
-    width: 324px;
-    height: 50px;
-    font-size: 14px;
-    font-style: 'regular';
-}
-
-#viewPlans{
-     width:170px;
-    height: 50px;
-    font-size: 14px;
-    background:transparent;
-    color:white;
-    border:2px solid white;
-    font-style: 'regular';
-}
-
-.wrappingButton{
+.fullPage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('images/fitnessBackgroundImage.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
     display: flex;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.containerHero {
+    max-width: 768px;
+    margin-left: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     gap: 24px;
 }
 
+#tittleHero {
+    color: #ffffff;
+    font-size: clamp(2.5rem, 6vw, 4.5rem); /* Mobil ve masaüstü arası akıcı boyutlandırma */
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+#heroSpan {
+    color: rgb(196, 253, 63);
+    font-size: inherit;
+    font-weight: 800;
+}
+
+#HeroParagraph {
+    color: #ffffff;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+
+.wrappingButton {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+#yourTransformation {
+    background-color: rgb(196, 253, 63);
+    color: #000;
+    border: none;
+    padding: 15px 24px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#viewPlans {
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 15px 24px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#yourTransformation:hover {
+    background-color: rgb(170, 225, 45);
+}
+
+#viewPlans:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+
+
+.ourservices {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap; 
+    gap: 30px;
+    background-color: #000000;
+    padding: 60px 20px;
+}
+
+.training,
+.nutrition,
+.coaching {
+    flex: 1;
+    min-width: 280px; 
+    max-width: 390px;
+    background-color: #1E1E1E;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 8px;
+}
+
+.servicesTittle {
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.servicesParagraph {
+    font-size: 15px;
+    color: #C4C9AC;
+    line-height: 1.5;
+}
+
 .line {
-  width: 100%;
-  height: 4px;
-  background-color: #3a3a3a;
-  margin-top: 30px;
+    width: 100%;
+    height: 4px;
+    background-color: #3a3a3a;
+    margin-top: 20px;
+    border-radius: 2px;
+    overflow: hidden;
 }
 
 .line-fill {
-  width: 30%; 
-  height: 100%;
-  background-color: #b6ff00;
+    width: 30%;
+    height: 100%;
+    background-color: #b6ff00;
 }
 
-.training{
-    width: 390px;
-    height: 253px;
-    background-color: #1E1E1E;
-    padding: 25px;
-    
-}
+@media screen and (max-width: 768px) {
+    .containerHero {
+        margin-left: 0;
+        text-align: center;
+        align-items: center;
+    }
 
-.nutrition{
-      width: 390px;
-    height: 253px;
-    background-color: #1E1E1E;
-    padding: 25px;
-}
+    #HeroParagraph br {
+        display: none;
+    }
 
-.coaching{
-    width: 390px;
-    height: 253px;
-    background-color: #1E1E1E;
-    padding: 25px;
-    
-}
+    .wrappingButton {
+        justify-content: center;
+        width: 100%;
+    }
 
+    #yourTransformation, 
+    #viewPlans {
+        width: 100%;
+        max-width: 320px;
+    }
 
-  .ourservices {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    background-color: black;
-    padding: 25px;
-    gap: 30px;
-    
-}
-
-.ServicesTittle{
-    font-size: 24px;
-    font-family: 'Montserrat';
-    color: #FFFFFF;
-    
-}
-
-.servicesParagraph{
-    font-size: 16px;
-    color: #C4C9AC;
+    .ourservices {
+        padding: 40px 15px;
+    }
 }
